@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fluentui/react": "^8.123.1",
     "next": "15.3.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
