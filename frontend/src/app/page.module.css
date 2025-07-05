@@ -37,6 +37,10 @@
   color: #1d4ed8;
 }
 
+.tableWrapper {
+  width: 100%;
+}
+
 .table {
   width: 100%;
 
@@ -78,4 +82,14 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+@media (max-width: 750px) {
+  .tableWrapper {
+    overflow-x: auto;
+  }
+
+  .table {
+    min-width: 600px;
+  }
 }

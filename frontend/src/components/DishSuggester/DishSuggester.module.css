@@ -1,6 +1,6 @@
 .container {
   padding: 30px;
-  margin: 40px 0;
+  margin: 20px 0;
 
   background-color: white;
   border: 1px solid #ddd;
@@ -75,7 +75,7 @@
 
 .results h3 {
   margin-bottom: 10px;
-  
+
   font-size: 20px;
 }
 

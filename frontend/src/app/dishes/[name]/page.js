@@ -18,6 +18,8 @@ export default async function DishDetailsPage({ params }) {
 
   const dish = await res.json();
 
+  console.log(dish, "dish")
+
   return (
     <main className={styles.dishCard}>
       <h1 className={styles.dishTitle}>{dish.name}</h1>
@@ -35,7 +37,7 @@ export default async function DishDetailsPage({ params }) {
           {dish.cook_time === -1 ? "Instant" : `${dish.cook_time} min`}
         </p>
         <p>
-          <strong>Flavor:</strong> {dish.flavor}
+          <strong>Flavor:</strong> {dish.flavor_profile}
         </p>
         <p>
           <strong>Course:</strong> {dish.course}

@@ -67,36 +67,38 @@ export default function Home() {
         </FilterGroup>
       </div>
 
-      <table className={styles.table}>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Diet</th>
-            <th>Prep Time</th>
-            <th>Cook Time</th>
-            <th>State</th>
-          </tr>
-        </thead>
-        <tbody>
-          {dishes.map((dish) => (
-            <tr key={dish.name}>
-              <td>
-                <Link href={`/dishes/${encodeURIComponent(dish.name)}`}>
-                  {dish.name}
-                </Link>
-              </td>
-              <td>{dish.diet}</td>
-              <td>{dish.prep_time === -1 ? "Instant" : dish.prep_time}</td>
-              <td>{dish.cook_time === -1 ? "Instant" : dish.cook_time}</td>
-              <td>
-                {dish.state === "-1" || dish.state === -1
-                  ? "Pan-Indian"
-                  : dish.state}
-              </td>
+      <div className={styles.tableWrapper}>
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Diet</th>
+              <th>Prep Time</th>
+              <th>Cook Time</th>
+              <th>State</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {dishes.map((dish) => (
+              <tr key={dish.name}>
+                <td>
+                  <Link href={`/dishes/${encodeURIComponent(dish.name)}`}>
+                    {dish.name}
+                  </Link>
+                </td>
+                <td>{dish.diet}</td>
+                <td>{dish.prep_time === -1 ? "Instant" : dish.prep_time}</td>
+                <td>{dish.cook_time === -1 ? "Instant" : dish.cook_time}</td>
+                <td>
+                  {dish.state === "-1" || dish.state === -1
+                    ? "Pan-Indian"
+                    : dish.state}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
       <Pagination
         page={page}
         totalPages={totalPages}
