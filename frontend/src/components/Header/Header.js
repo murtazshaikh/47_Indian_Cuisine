@@ -20,8 +20,14 @@ export default function Header() {
     }
 
     const debounce = setTimeout(() => {
+      // reference for local api
+      // setUrl(
+      //   `http://localhost:3000/api/dishes/search/suggestions?q=${encodeURIComponent(
+      //     query
+      //   )}`
+      // );
       setUrl(
-        `http://localhost:3000/api/dishes/search/suggestions?q=${encodeURIComponent(
+        `https://four7-indian-cuisine.onrender.com/api/dishes/search/suggestions?q=${encodeURIComponent(
           query
         )}`
       );

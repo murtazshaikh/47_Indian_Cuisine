@@ -5,7 +5,7 @@ export default async function DishDetailsPage({ params }) {
 
   // Fetch dish data from your backend API
   const res = await fetch(
-    `http://localhost:3000/api/dishes/${encodeURIComponent(dishName)}`
+    `https://four7-indian-cuisine.onrender.com/api/dishes/${encodeURIComponent(dishName)}`
   );
 
   if (res.status === 404) {

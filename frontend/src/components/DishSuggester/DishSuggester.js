@@ -69,7 +69,7 @@ export default function DishSuggester() {
       return;
     }
 
-    setUrl("http://localhost:3000/api/dishes/suggestions");
+    setUrl("https://four7-indian-cuisine.onrender.com/api/dishes/suggestions");
     setFetchOptions({
       method: "POST",
       headers: { "Content-Type": "application/json" },

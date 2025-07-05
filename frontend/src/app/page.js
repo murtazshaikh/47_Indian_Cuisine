@@ -23,7 +23,7 @@ export default function Home() {
   }, [dietFilter, sortField, sortOrder]);
 
   useEffect(() => {
-    let apiUrl = `http://localhost:3000/api/dishes?page=${page}&limit=${limit}&sort=${sortField},${sortOrder}`;
+    let apiUrl = `https://four7-indian-cuisine.onrender.com/api/dishes?page=${page}&limit=${limit}&sort=${sortField},${sortOrder}`;
     if (dietFilter) {
       apiUrl += `&diet=${dietFilter}`;
     }
