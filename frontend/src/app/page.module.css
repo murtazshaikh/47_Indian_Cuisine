@@ -1,0 +1,81 @@
+.container {
+  max-width: 1000px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.title {
+  margin-bottom: 20px;
+
+  font-size: 28px;
+}
+
+.filtersContainer {
+  padding: 0 1rem;
+  margin: 2rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.sortButton {
+  margin-left: 0.5rem;
+
+  font-size: 1.2rem;
+  color: #333;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  
+  transition: color 0.3s;
+}
+
+.sortButton:hover {
+  color: #1d4ed8;
+}
+
+.table {
+  width: 100%;
+
+  table-layout: fixed;
+  background: white;
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.table th {
+  padding: 12px;
+
+  text-align: left;
+  background-color: #f0f0f0;
+}
+
+.table td {
+  padding: 12px;
+
+  border-top: 1px solid #eee;
+}
+
+.table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.table th:nth-child(1) { width: 30%; }
+.table th:nth-child(2) { width: 20%; }
+.table th:nth-child(3) { width: 15%; }
+.table th:nth-child(4) { width: 15%; }
+.table th:nth-child(5) { width: 20%; }
+
+.pagination {
+  margin-top: 20px;
+  
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

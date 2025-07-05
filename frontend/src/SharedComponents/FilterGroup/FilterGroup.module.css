@@ -1,0 +1,38 @@
+.filterGroup {
+  display: flex;
+  align-items: center;
+}
+
+.filterGroup label {
+  margin-right: 0.5rem;
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.filterGroup select {
+  width: 150px;
+  padding: 0.4rem 1.2rem 0.4rem 0.8rem;
+
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='12' viewBox='0 0 24 24' width='12' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.6rem center;
+  background-size: 1rem;
+
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.filterGroup select:focus {
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.2);
+  outline: none;
+}
