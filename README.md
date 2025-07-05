@@ -50,7 +50,7 @@ Design and implement web systems to assist users interested in exploring Indian 
 ### 1️⃣ Backend
 
 ```bash
-cd indian-cuisine-api
+cd backend
 npm install
 npm start
 ```
